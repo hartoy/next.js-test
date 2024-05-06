@@ -18,7 +18,7 @@ const Menu = ({links}: MenuProps) => {
         </li>
         )}
       </ul>
-      <button className="button-primary">Postear</button>
+      <button className="button-primary uppercase font-semibold">Postear</button>
     </nav>
   )
 }
