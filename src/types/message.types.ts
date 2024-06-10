@@ -1,5 +1,8 @@
+import { UserType } from "./user.types";
+
 export type MessageType = {
-    username: string;
-    name:string;
+    id:string;
+    user: UserType
     message:string;
+    repliesCount: number;
 }

@@ -3,10 +3,21 @@
 @tailwind utilities;
 
 @layer components {
-  h1,
-  h2,
-  h3 {
-    @apply font-title;
+  main {
+    @apply w-full;
+    @apply flex;
+    @apply flex-col;
+    @apply items-center;
+  }
+
+  section {
+    @apply px-4;
+    @apply w-full;
+  }
+  
+  h1 {
+    @apply font-bold;
+    @apply text-xl;
   }
 
   body {
@@ -30,10 +41,22 @@
     @apply px-6;
     @apply py-2;
   }
+  
+    .button-primary:hover {
+      @apply bg-blue-500;
+    }
 
-  .button-primary:hover {
-    @apply bg-blue-500;
-  }
+    .button-secondary {
+      @apply rounded-lg;
+      @apply bg-gray-50;
+      @apply text-blue-400;
+      @apply px-6;
+      @apply py-2;
+    }
+
+    .button-secondary:hover {
+      @apply bg-gray-100;
+    }
 
   .link-primary {
     @apply font-semibold;
